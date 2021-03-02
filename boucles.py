@@ -18,6 +18,41 @@ data = h.read()
 
 print(data)
 
+#split
+"""
+names = "Tom,Seb,Fred"
+name_split = names.split(",")
+print(name_split)
+
+"""
+# training
+
+rows = data.split("\n")
+# rows_slice = rows[0:5]
+print("\n")
+print(rows[0:5])
+
+# loop FOR
+# exemple
+cities = ["Paris", "Madrid", "Rome"]
+
+for city in cities:
+    print(city)
+    print("\n")
+
+
+# training
+
+ten_rows = rows[0:10]
+
+for row in ten_rows:
+    print(row)
+
+
+
+
+
+
 
 
 
