@@ -48,11 +48,13 @@ area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
 print('The area of our triangle is %0.2f' %area)
 
 
-
+"""
 
 a = float(input('Enter 1st side: '))
 b = float(input('Enter 2nd side: '))
 c = float(input('Enter 3rd side: '))
+
+"""
 
 # calculate the semi-perimeter
 s = (a + b + c) / 2
@@ -62,3 +64,56 @@ area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
 print('The area of our triangle is %0.2f' %area)
 
 print('fin de journee')
+
+countries = []
+temperatures = []
+
+countries.append('France')
+countries.append('Spain')
+countries.append('Canada')
+
+
+temperatures.append(122.5)
+temperatures.append(124)
+temperatures.append(105.5)
+
+
+print(countries)
+print(temperatures)
+
+
+france = countries[0]
+france_temperature = temperatures[0]
+
+print(france, france_temperature, sep='/')
+
+
+fusion = [countries[0], temperatures[0], countries[1], temperatures[1], countries[2], temperatures[2]]
+
+print(fusion)
+
+# longueur d'une liste
+# len
+
+int_months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+total_lenght = len(int_months)
+
+print('longueur total est: ', total_lenght)
+
+last_value_position = len(int_months) - 1
+last_value = int_months[last_value_position]
+
+print(last_value)
+
+
+countries = []
+temperatures = []
+
+countries = ['France', 'Spain', 'US', 'Canada', 'Australia', 'Argentina']
+temperatures = [112.5, 124.0, 134.1, 105.2, 112.5, 128.3]
+
+countries_slice = countries[0:3]
+temperatures_slice = temperatures[len(temperatures)-4:] #meilleur choix
+
+print(countries_slice)
+print(temperatures_slice)
