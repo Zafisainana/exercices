@@ -10,7 +10,29 @@ ficier departements_fr.csv
 
 f = open("departements_fr.csv", "r", encoding="ISO-8859-1")
 
+# création de la liste data
+
 data = f.read()
 
-print(data)
-type(data)
+rows = data.split('\n')
+print(rows)
+
+final_data=[]
+
+for row in rows:
+    split_row = row.split(",")
+    final_data.append(split_row)
+
+print(final_data)
+
+department_population = []
+
+for row in final_data:
+    dpt_list = int(row[1])
+
+    department_population.append(dpt_list)
+
+print(department_population)
+
+
+
