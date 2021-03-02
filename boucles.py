@@ -49,6 +49,21 @@ for row in ten_rows:
     print(row)
 
 
+# liste de liste
+
+cities_number = ["Paris,75", "Madrid,33", "Rome,45"]
+
+final_list = [] # creation d'une liste vide
+
+for row in cities_number:
+    split_list = row.split(",")
+    final_list.append(split_list)
+
+print(final_list)
+
+
+
+
 
 
 

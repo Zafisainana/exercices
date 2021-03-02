@@ -43,6 +43,7 @@ for row in rows:
     final_data.append(value)
 
 print(final_data)
+print(type(final_data[0]))
 
 
 
